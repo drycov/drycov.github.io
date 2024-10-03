@@ -94,16 +94,16 @@ layout: default
     }
 
     // Конфигурация вашего веб-приложения Firebase
-    const firebaseConfig = {
-        apiKey: "AIzaSyCeMw2MuULJljBV8vSGO2ddfxm9se_EmKM",
-        authDomain: "gibapon-f0708.firebaseapp.com",
-        databaseURL: "https://gibapon-f0708-default-rtdb.firebaseio.com",
-        projectId: "gibapon-f0708",
-        storageBucket: "gibapon-f0708.appspot.com",
-        messagingSenderId: "878739389133",
-        appId: "1:878739389133:web:88c63f21e5ea54560b8784",
-        measurementId: "G-MLET020CCP"
-    };
+const firebaseConfig = {
+    apiKey: "AIzaSyCeMw2MuULJljBV8vSGO2ddfxm9se_EmKM",
+    authDomain: "gibapon-f0708.firebaseapp.com",
+    databaseURL: "https://gibapon-f0708-default-rtdb.firebaseio.com",
+    projectId: "gibapon-f0708",
+    storageBucket: "gibapon-f0708.appspot.com",
+    messagingSenderId: "878739389133",
+    appId: "1:878739389133:web:88c63f21e5ea54560b8784",
+    measurementId: "G-MLET020CCP"
+  };
 
     // Инициализация Firebase
     const app = initializeApp(firebaseConfig);
