@@ -1,40 +1,33 @@
-# Privacy Policy
+# Политика конфиденциальности
 
-[["We" or "I", or Website or App name]] takes your privacy seriously. To better protect your privacy [["we" or "I"]] provide this privacy policy notice explaining the way your personal information is collected and used.
+**Ги-PON** серьезно относится к вашей конфиденциальности. Чтобы лучше защитить вашу конфиденциальность, **я** предоставляем это уведомление о политике конфиденциальности, объясняющее, как собирается и используется ваша личная информация.
 
+## Сбор обычной информации
 
-## Collection of Routine Information
+Этот **приложение** отслеживает основную информацию о своих **пользователях**. Эта информация включает в себя, но не ограничивается, IP-адресами, данными **приложения**, временными метками и реферирующими страницами. Никакая из этой информации не может индивидуально идентифицировать конкретных **пользователей** этого **приложения**. Информация отслеживается для рутинного администрирования и целей обслуживания.
 
-This [["website" or "app"]] track basic information about their [["visitors" or "users"]]. This information includes, but is not limited to, IP addresses, [["browser" or "app"]] details, timestamps and referring pages. None of this information can personally identify specific [["visitors" or "user"]] to this [["website" or "app"]]. The information is tracked for routine administration and maintenance purposes.
+## Файлы cookie
 
+При необходимости это **приложение** использует файлы cookie для хранения информации о предпочтениях и истории посещений пользователя, чтобы лучше обслуживать **пользователей** и/или предоставлять им персонализированный контент.
 
-## Cookies
+## Реклама и другие третьи стороны
 
-Where necessary, this [["website" or "app"]] uses cookies to store information about a visitor’s preferences and history in order to better serve the [["visitor" or "user"]] and/or present the [["visitor" or "user"]] with customized content.
+Рекламные партнеры и другие третьи стороны могут использовать файлы cookie, скрипты и/или веб-маяки для отслеживания активности **пользователей** в этом **приложении** с целью отображения рекламы и другой полезной информации. Такое отслеживание осуществляется непосредственно третьими сторонами через их собственные серверы и подчиняется их собственным политикам конфиденциальности. Это **приложение** не имеет доступа или контроля над этими файлами cookie, скриптами и/или веб-маяками, которые могут использоваться третьими сторонами. Узнайте, как [отказаться от использования файлов cookie Google](http://www.google.com/privacy_ads.html).
 
+## Ссылки на сайты третьих сторон
 
-## Advertisement and Other Third Parties
+**Я** включил ссылки на этом **приложении** для вашего использования и справки. **Я** не несу ответственности за политики конфиденциальности этих веб-сайтов. Вы должны помнить, что политики конфиденциальности этих сайтов могут отличаться от **моих**.
 
-Advertising partners and other third parties may use cookies, scripts and/or web beacons to track [["visitors" or "user"]] activities on this [["website" or "app"]] in order to display advertisements and other useful information. Such tracking is done directly by the third parties through their own servers and is subject to their own privacy policies. This [["website" or "app"]] has no access or control over these cookies, scripts and/or web beacons that may be used by third parties. Learn how to [opt out of Google’s cookie usage](http://www.google.com/privacy_ads.html).
+## Безопасность
 
+Безопасность вашей личной информации важна для **меня**, но помните, что ни один метод передачи через Интернет или метод электронного хранения не является 100% безопасным. Хотя **я** стремилюсь использовать коммерчески приемлемые средства для защиты вашей личной информации, **я** не мошгу гарантировать ее абсолютную безопасность.
 
-## Links to Third Party Websites
+## Изменения в этой Политике конфиденциальности
 
-[["We" or "I"]] have included links on this [["website" or "app"]] for your use and reference. [["We" or "I"]] are not responsible for the privacy policies on these websites. You should be aware that the privacy policies of these websites may differ from [["our" or "my"]] own.
+Эта Политика конфиденциальности вступает в силу с **[01.01.2024]** и будет оставаться в силе, за исключением любых изменений в ее положениях в будущем, которые будут вступать в силу немедленно после их размещения на этой странице.
 
+**Я** оставляем за собой право обновлять или изменять **мою** Политику конфиденциальности в любое время, и вы должны периодически проверять эту Политику конфиденциальности. Если **я** внесу какие-либо существенные изменения в эту Политику конфиденциальности, **я** уведомилю вас либо через адрес электронной почты, который вы предоставили **мне**, либо разместив заметное уведомление на **моем** **приложении**.
 
-## Security
+## Контактная информация
 
-The security of your personal information is important to [["us" or "me"]], but remember that no method of transmission over the Internet, or method of electronic storage, is 100% secure. While [["we" or "I"]] strive to use commercially acceptable means to protect your personal information, [["we" or "I"]] cannot guarantee its absolute security.
-
-
-## Changes To This Privacy Policy
-
-This Privacy Policy is effective as of [[Date]] and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page.
-
-[["We" or "I"]] reserve the right to update or change [["our" or "my"]] Privacy Policy at any time and you should check this Privacy Policy periodically. If [["we" or "I"]] make any material changes to this Privacy Policy, [["we" or "I"]] will notify you either through the email address you have provided [["us" or "me"]], or by placing a prominent notice on [["our" or "my"]] [["website" or "app"]].
-
-
-## Contact Information
-
-For any questions or concerns regarding the privacy policy, please send [["us" or "me"]] an email to [[Contact Email Address]].
+Если у вас есть какие-либо вопросы или беспокойства относительно политики конфиденциальности, пожалуйста, отправьте **мне** электронное письмо на **drycov@gmail.com**.
