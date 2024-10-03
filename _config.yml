@@ -1,31 +1,5 @@
-title: Ги-PON
-description: Политика конфиденциальности приложения Ги-PON
-url: https://drycov.github.io/drycov.github.io
-baseurl: ""  # Установите, если ваш сайт находится в подкаталоге
-author:
-  name: Denis Rykov
-  email: drycov@gmail.com
-
-# Настройки темы
-theme: minima  # Вы можете использовать любую другую тему, которая вам нравится
-
-# Параметры навигации
-nav:
-  - title: Главная
-    url: /
-  - title: Политика конфиденциальности
-    url: /privacy_policy.html
-
-# Переменные для использования в шаблонах
-variables:
-  company_name: Ги-PON
-  contact_email: drycov@gmail.com
-
-# Настройки плагинов
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-
-# Настройки для генерации RSS-ленты
-feed:
-  path: feed.xml
+title: GI-PON
+description: GI-PON Privacy policy.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-architect
