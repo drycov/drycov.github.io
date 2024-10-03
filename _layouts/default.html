@@ -39,19 +39,6 @@
 
             <aside id="sidebar">
                 {% include sidebar.html %}
-                <!-- Опциональные кнопки для загрузки, если включены в конфигурации -->
-                <!-- 
-                {% if site.show_downloads %}
-                    <a href="{{ site.github.zip_url }}" class="button">
-                        <small>Download</small>
-                        .zip file
-                    </a>
-                    <a href="{{ site.github.tar_url }}" class="button">
-                        <small>Download</small>
-                        .tar.gz file
-                    </a>
-                {% endif %}
-                -->
 
                 {% if site.github.is_project_page %}
                     <p class="repo-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</p>
@@ -60,93 +47,6 @@
             </aside>
         </div>
     </div>
-
-    <!-- Подключите Firebase в старом стиле -->
-    <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-analytics.js"></script>
-
-    <script>
-      const firebaseConfig = {
-        apiKey: "AIzaSyCeMw2MuULJljBV8vSGO2ddfxm9se_EmKM",
-        authDomain: "gibapon-f0708.firebaseapp.com",
-        databaseURL: "https://gibapon-f0708-default-rtdb.firebaseio.com",
-        projectId: "gibapon-f0708",
-        storageBucket: "gibapon-f0708.appspot.com",
-        messagingSenderId: "878739389133",
-        appId: "1:878739389133:web:ec3c5b55356676af0b8784",
-        measurementId: "G-B3ENJDL0RJ"
-      };
-
-      const app = firebase.initializeApp(firebaseConfig);
-      const analytics = firebase.analytics(app);
-      const db = firebase.firestore(app);
-      
-      // Модель задачи
-      class Task {
-          constructor(id, customer, taskId, type, address, status, creationTime, apartment, creatorId, assignedUserId, location, description) {
-              this.id = id;
-              this.customer = customer;
-              this.taskId = taskId;
-              this.type = type;
-              this.address = address;
-              this.status = status;
-              this.creationTime = creationTime;
-              this.apartment = apartment;
-              this.creatorId = creatorId;
-              this.assignedUserId = assignedUserId;
-              this.location = location;
-              this.description = description;
-          }
-
-          static parseType(value) {
-              return typeof value === 'number' ? value : parseInt(value, 10) || 0;
-          }
-
-          static parseLocation(locationData) {
-              return {
-                  latitude: locationData?.latitude || 0.0,
-                  longitude: locationData?.longitude || 0.0
-              };
-          }
-
-          static fromMap(data) {
-              return new Task(
-                  data.id,
-                  data.customer || '',
-                  Task.parseType(data.taskId),
-                  Task.parseType(data.type),
-                  data.address || {},
-                  data.status || '',
-                  data.creationTime || new Date(),
-                  data.apartment || '',
-                  data.creatorId || '',
-                  data.assignedUserId || '',
-                  Task.parseLocation(data.location || {}),
-                  data.description || ''
-              );
-          }
-      }
-
-      // Модель временной линии
-      class Timeline {
-          constructor(taskId, previousType, newType, timestamp) {
-              this.taskId = taskId;
-              this.previousType = previousType;
-              this.newType = newType;
-              this.timestamp = timestamp;
-          }
-
-          async save() {
-              await db.collection('tasks').doc(this.taskId).collection('timeline').add({
-                  taskId: this.taskId,
-                  previousType: this.previousType,
-                  newType: this.newType,
-                  timestamp: this.timestamp
-              });
-          }
-      }
-    </script>
 
 </body>
 </html>
