@@ -10,15 +10,15 @@
         <label for="userEmail">Ваш email:</label>
         <input type="email" id="userEmail" name="userEmail" required placeholder="Введите ваш email">
 
-        <label for="requestLink">Ссылка для запроса:</label>
-        <input type="text" id="requestLink" name="requestLink" required placeholder="Введите ссылку для запроса">
+        <label for="subject">Причина:</label>
+        <input type="text" id="subject" name="subject" required placeholder="Введите причину для удаления">
 
         <button type="submit">Отправить запрос</button>
     </form>
 
     <p id="responseMessage"></p>
 
-<script>
+<!-- <script>
     document.getElementById('deleteAccountForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Отменяем стандартное поведение формы
 
@@ -33,4 +33,40 @@
         // Очистка формы
         this.reset();
     });
+</script> -->
+
+<script>
+    document.getElementById('deleteAccountForm').addEventListener('submit', async function(event) {
+        event.preventDefault(); // Отменяем стандартное поведение формы
+
+        const email = document.getElementById('userEmail').value;
+        const reason = document.getElementById('subject').value;
+        const description = 'Прошу вас удалить мою Учетную запись из базы данных приложения Gi-PON по причине: ';
+        // Создаем экземпляр Task
+        const task = new Task({
+
+            id: '', // Установите, если необходимо
+
+            customer: '', 
+            type: 999,
+            address: "", // Установите, если необходимо
+            status: 'pending', // Установите статус по умолчанию
+            creationTime: new Date(), // Установите текущее время
+            apartment: 'Application', // Установите, если необходимо
+            creatorId: email, // Установите ID создателя
+            assignedUserId: '', // Установите ID назначенного пользователя
+            location: {latitude: 0, longitude: 0}, // Установите, если необходимо
+            description: description + reason, // Установите, если необходимо
+        });
+
+        // Сохраняем задачу в Firestore
+        await task.saveRequest(email, reason);
+
+        document.getElementById('responseMessage').innerText = 
+            `Запрос на удаление аккаунта отправлен для ${email}.`;
+
+        // Очистка формы
+        this.reset();
+    });
 </script>
+
