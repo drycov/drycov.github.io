@@ -1,4 +1,10 @@
-# Privacy Policy
+---
+layout: default
+---
+
+
+
+ Privacy Policy
 
 **Giga-PON** takes your privacy seriously. To better protect your privacy, **I** provide this privacy policy notice explaining how your personal information is collected and used.
 
