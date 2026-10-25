@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'ru' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <title>{{ page.title | default: site.title | escape }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
+  {% seo %}
+  {% include head-custom.html %}
+</head>
+<body class="portfolio-page" id="top">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="Денис Рыков — на главную">DR<span>.</span></a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#about">Обо мне</a>
+        <a href="#skills">Компетенции</a>
+        <a href="#projects">Проекты</a>
+        <a class="nav-contact" href="#contact">Связаться <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">{{ content }}</main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="{{ '/' | relative_url }}" aria-label="Наверх">DR<span>.</span></a>
+      <p>Денис Рыков · Разработка программных систем</p>
+      <div class="footer-links">
+        <a href="{{ '/privacy_policy.html' | relative_url }}">Конфиденциальность</a>
+        <a href="{{ '/delete_me.html' | relative_url }}">Удаление аккаунта</a>
+      </div>
+      <span class="copyright">© {{ site.time | date: '%Y' }}</span>
+    </div>
+  </footer>
+</body>
+</html>
