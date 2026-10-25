@@ -1,36 +1,37 @@
-# DevOps portfolio redesign
+# Developer portfolio redesign
 
 **Date:** 2026-10-25  
 **Repository:** `drycov/drycov.github.io`
 
 ## Intent
-Replace the GI-PON product landing page with a Russian-language professional portfolio for Denis, focused on DevOps, infrastructure, network engineering, and software delivery. Help a hiring manager or technical lead quickly understand the author's strengths, inspect concrete work, and find contact links.
+Replace the GI-PON product landing page with Denis Rykov's Russian-language developer portfolio. Present software development as the primary identity, with infrastructure and DevOps as complementary strengths. Help a technical lead or prospective client quickly understand the work, inspect real public projects, and make contact.
 
 ## Goals
-- Create a concise single-page portfolio with an introduction, skills, selected projects, engineering approach, and contacts.
-- Feature real public repositories such as ZBSS, CMS, ALPR Mergen, OptiBudget, PPR System, and Zabbix Dialer.
-- Describe technologies and outcomes only where supported by available project context; avoid fabricated metrics, employers, certifications, and employment dates.
+- Build a single-page portfolio with an introduction, development capabilities, selected projects, engineering approach, and contact links.
+- Feature public projects: ZBSS, CMS, Zabbix Dialer, OptiBudget, and PPR System.
+- Describe projects and technologies only where supported by repository documentation or known project context; do not publish private projects or fabricate metrics, employers, certifications, or experience dates.
 - Make the site readable on desktop and mobile, with accessible contrast and clear links.
 - Preserve the existing privacy-policy and account-deletion pages.
 
 ## Non-goals
 - No backend, analytics, forms, or external UI framework.
-- No invented uptime, scale, years of experience, or production metrics.
+- No fabricated uptime, scale, years of experience, or production metrics.
 - No changes to the source applications in the featured repositories.
 
 ## Approaches
-1. **Terminal/infrastructure dashboard:** memorable, but risks presenting invented live system state.
-2. **Professional engineering portfolio (selected):** restrained dark visual style with real project cards, technology groups, and contact links; clearer for hiring and grounded in existing work.
+1. **Terminal/infrastructure dashboard:** visually distinctive, but suggests live system data and overemphasizes DevOps.
+2. **Developer portfolio with engineering case studies (selected):** restrained dark style, real software projects, development capabilities, and infrastructure strengths; matches the requested identity and is grounded in actual work.
 3. **Keep the current Architect theme:** minimal changes, but does not meet the requested portfolio redesign.
 
 ## Constraints and implementation choices
 - Keep GitHub Pages and Jekyll; retain existing static privacy/deletion pages.
-- Replace the Architect layout with a custom responsive portfolio layout and CSS, avoiding added dependencies.
+- Add a dedicated responsive portfolio layout and stylesheet without added runtime dependencies.
 - Use Russian as the primary language and English metadata where useful for search/social previews.
 - Link each project card to its public GitHub repository.
-- Include a short, direct contact section using the existing public email and GitHub profile.
+- Include the existing public email and GitHub profile as contact methods.
+- Keep legacy pages on the existing Jekyll theme and layout.
 
 ## Remaining implementation decisions
 - Organize the homepage as a single scrollable page with anchored sections.
-- Use lightweight CSS details (grid, terminal-inspired labels, status colors) without simulated live telemetry.
-- Preserve legacy pages with a compact navigation link back to the portfolio.
+- Use CSS for a developer-focused hero, skill groups, project cards, and responsive navigation.
+- Avoid simulated live telemetry and JavaScript-dependent navigation.
